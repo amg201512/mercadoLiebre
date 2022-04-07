@@ -1,0 +1,391 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    background-color:#EAC926;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+h3{
+    font-size: 24px;
+}
+
+p{
+    font-size: 12px;
+}
+div.top-header{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: space-between;
+    width: 100%;    
+}
+div.top-header .logo{
+    width: 45%;
+}
+
+div.top-header form.search-bar{
+    width: 48%;
+    display: flex;
+    align-items: center;
+}
+form.search-bar input{
+    border-radius: 7px;
+    min-height: 30px;
+    border: 0px;
+}
+form.search-bar button.search{
+    height: 30px;
+    border-radius: 15px;
+    background-color: white;
+    position: relative;
+    border: 0px;
+    right: 9px;
+    color: #666;
+}
+
+header div.input{
+    border-radius: 5px;
+}
+header div.form{
+display: inline;
+}
+
+header nav{
+    font-size: 12px;
+}
+
+header ul li{
+    list-style-type: none;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 15px;
+}
+
+header .form .input{
+    background-color: #fff;
+    border: 1px solid #000;
+    outline: none;
+    color: #666;
+    padding: 2px;
+}
+header .form .submit{
+    background-color: #FFF;
+    border: 1px solid #000;
+    color: #666;
+    width: 10%;
+}
+
+header div.top-header p{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+div.burger-menu{
+    text-align: center;
+}
+
+div.burger-menu i{
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    height: 40px;
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
+    width: 40px;
+}
+
+main section.last-visit div.products{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(12rem,1fr));
+    gap:5px;
+}
+.price{
+    font-size: 18px;
+    flex:30%;
+}
+
+.discount{
+    flex:70%;
+}
+.discount,
+.description{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+main article:hover .description{
+    display: block;
+}
+
+h4.description{
+   display:none;
+}
+
+h3,
+.description{
+    color: #666;
+}
+
+.description{
+    margin-top: 20px;
+}
+
+section.banner img{
+    width: 100%;
+}
+
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+
+main section article{
+    background-color: #fff;    
+    margin: 10px 0px;
+}
+
+main section article img{
+    width: 100%;
+}
+
+main section article i,
+.discount{
+    color: #39b54a;
+}
+
+main section article i{
+    display: block;
+   font-size: 16px;
+   padding:5px;
+   width: 30px;
+   height: 30px;
+   border: 1px solid #39b54a;
+   background-color: #FFF;
+   border-radius: 50%;
+   position: absolute;
+   right: 20px;
+   top:-15px;
+}
+
+main section h3{
+    text-align: center;
+    margin: 20px 0px;
+}
+main section.last-visit{
+    display: flex;
+    justify-content: center;
+}
+
+article div.main-article{
+    width: 100%;
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    display:flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    position: relative;
+}
+
+footer{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+footer div.iconos{
+    color:#0044AA;
+    text-align: center;
+    display: block;
+}
+footer div:hover .iconos{
+    color:rgb(0, 20, 100);
+}
+
+footer div.texto-titulares{
+    text-align: center;
+}
+footer p.texto-descripciones{
+    text-align: center;
+}
+/*register.html*/
+div.register-form-container{
+    display: flex;
+    width: 260px;
+    justify-content: center;
+    text-align: center;
+    margin:auto;
+    border-radius: 6px;
+}
+form#register{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+}
+form#register div.form-queDeseas{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    justify-content: space-around;
+}
+form#register div.form-preferences{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+form#register div.form-preferences label{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+form#register div.button-container{
+    display: flex;
+    margin-top:15px;
+}
+form#register input{
+    border-radius: 7px;
+    border: 0.1px solid whitesmoke;
+    min-height: 25px;
+}
+form#register button.form-button{
+    background-color: #0044AA;
+    color: white;
+    border-radius: 8px;
+    min-height: 25px;
+    width: 125px;
+}
+
+/* login */
+div.login-form-container{
+    display: flex;
+    width: 580px;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 20px;
+}
+div.login-form-container label{
+    display: none;
+}
+form#login-form button.form-button{
+    width: 95%;
+    background:#0044AA;
+    color: white;
+    border-radius: 6px;
+    min-height: 25px;
+}
+form#login-form button.form-button:hover{
+    background-color:#0022AA;
+}
+
+a.login-button{
+    text-decoration: none;
+    color: white;
+    background-color: #0044AA;
+    
+}
+form#login-form a:visited{
+    color: white;
+}
+
+form#login-form div.username input{
+    border-radius: 5px;
+    width: 400px;
+    border: 1px;
+    margin: 15px;
+    min-height: 30px;
+}
+section.last-visit div{
+    margin: 2px;
+}
+
+@media (min-width: 361px){
+    header nav ul{
+        display: none;
+    }
+    main section .description{
+        display: none;
+    }
+    
+    main section article:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    main section article:hover i{
+        transform: rotate(-90deg);
+        }
+        
+    main section article i{
+        transition:transform,0.5s
+        
+    }
+}
+
+@media (min-width: 769px){
+    footer div{
+        display: flex;
+        flex-wrap: wrap;
+        width: 29%;
+        flex-direction: column;
+        align-items: center;
+    }
+    main section article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+header nav ul{
+    display: block;
+}
+div.burger-menu{
+    display: none;
+}
+div.top-header{
+    display: flex;
+    flex-wrap: inherit;
+    padding: 10px;
+    justify-content: space-between;
+    width: 100%;
+}
+header div.top-header p{
+    margin-top:5%;
+    text-align: center;
+    flex-basis: 30%;
+
+    
+}
+div.top-header form.search-bar{
+    display: flex;
+    align-items: center;
+    flex-basis: 28%;
+    justify-content: center;
+}
+form.search-bar input{
+    width:200px;
+}
+header.top-header div.logo{
+    width: 45%;
+    flex-basis: 33%;
+}
+
+header nav ul{
+    display: flex;
+    margin: 1px;
+}
+header ul li a{
+    margin:5px;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+}
