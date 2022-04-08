@@ -1,1 +1,1 @@
-web:node Mercadoliebre/app.js
+web:node app.js
